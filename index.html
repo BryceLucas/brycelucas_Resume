@@ -4,16 +4,99 @@
     <meta charset="UTF-8" />
     <title>Bryce Lucas - Portfolio Website</title>
     <link rel="icon" type="image/jpg" href="assets/img/OU campus.jpg" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      /* Navigation styling */
+      .nav-container {
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        width: 150px;
+      }
+      .nav-container h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin-bottom: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+      }
+      /* Header and image styling */
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 50%;
+      }
+      blockquote {
+        text-align: center;
+        font-style: italic;
+        margin: 20px 0;
+      }
+      /* Paragraph styling */
+      p {
+        font-size: 16px;
+        text-align: center;
+        margin: 20px auto;
+        width: 60%;
+        line-height: 1.6;
+      }
+      /* Progress bar styling */
+      .progress-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+      progress {
+        display: block;
+        margin: 10px auto;
+      }
+      /* Footer styling */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px 0;
+        border-top: 1px solid #ccc;
+      }
+      footer p {
+        margin: 5px;
+      }
+      footer a {
+        text-decoration: none;
+        color: #000;
+      }
+      hr {
+        width: 80%;
+        margin: 40px auto;
+      }
+    </style>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="html/my_resume.html">Resume</a></li>
-        <li><a href="html/my_fun_facts.html">Fun Facts</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <h2>Navigation Bar</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html/my_resume.html">Resume</a></li>
+          <li><a href="html/my_fun_facts.html">Fun Facts</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Heading -->
     <h1>Bryce Lucas's Portfolio Website</h1>
@@ -23,11 +106,13 @@
 
     <!-- Quotation -->
     <blockquote>
-      "What we spend our time on is probably the most important decision we
-      make."
+      "What we spend our time on is probably the most important decision we make."
       <br />
       - Ray Kurzweil
     </blockquote>
+
+    <!-- Horizontal Rule after the quote -->
+    <hr />
 
     <!-- Introduction -->
     <p>
@@ -38,16 +123,18 @@
       passion for computers mainly stems from the hardware end of things. I have
       been interning in IT for over 3 years now gaining invaluable experience in
       the field and obtaining a better understanding of the day to day
-      operations and struggles in the corporate and educational realm of IT. I
+      operations and struggles in the corporate and educational field of IT. I
       aspire to get an IT or Cybersecurity position at a reputable university or
       in the car industry locally here in Detroit.
       <a href="html/my_resume.html">Resume</a> and
       <a href="html/my_fun_facts.html">Fun Facts</a> pages.
     </p>
 
-    <!-- Progress Bar -->
-    <p>Credits Completed Towards Degree: 112</p>
-    <progress value="112" max="128"></progress>
+    <!-- Progress Bar Section -->
+    <div class="progress-container">
+      <p>Credits Completed Towards Degree: 112</p>
+      <progress value="112" max="128"></progress>
+    </div>
 
     <!-- Horizontal Rule -->
     <hr />
@@ -57,14 +144,13 @@
       <p>&copy; 2024 Bryce Lucas</p>
       <p>
         Email:
-        <a href="mailto:your.email@example.com">brycelucas2019@gmail.com</a>
+        <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a>
       </p>
       <p>
         Connect with me on:
         <a href="https://www.linkedin.com/in/bryce-lucas-551767218/"
           >LinkedIn</a
         >
-        |
       </p>
     </footer>
   </body>
