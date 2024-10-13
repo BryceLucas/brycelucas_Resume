@@ -1,3 +1,4 @@
+/* General body styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -12,24 +13,42 @@ body {
   width: 150px;
 }
 
+/* Navigation Bar Header */
 .nav-container h2 {
   font-size: 20px;
   margin-bottom: 10px;
   margin-left: -5px;
 }
 
+/* Navigation Bar Links */
 nav ul {
   list-style-type: none;
   padding: 0;
 }
 
 nav ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 nav ul li a {
+  padding: 10px;
+  background-color: #89cff0; /* Light blue background for navbar */
   text-decoration: none;
-  color: #000;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* Hover effect on nav links */
+nav ul li a:hover {
+  background-color: #4682b4; /* Darker blue when hovered */
+  transition: background-color 0.3s ease;
+}
+
+/* Active link style (for current page) */
+nav ul li a:active {
+  background-color: #4682b4; /* Darker blue when clicked */
 }
 
 /* Header and image styling */
@@ -63,6 +82,7 @@ img {
   border-radius: 50%;
 }
 
+/* Table Styling */
 table {
   margin: 20px auto;
   text-align: center;
