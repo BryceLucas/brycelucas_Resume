@@ -2,204 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Bryce Lucas - Portfolio Website</title>
+    <title>Bryce Lucas - Fun Facts</title>
+    <link rel="stylesheet" href="../css/facts.css"> <!-- Link to facts.css -->
     <link rel="icon" type="image/jpg" href="../assets/img/OU campus.jpg" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      /* Navigation styling */
-      .nav-container {
-        position: absolute;
-        left: 20px;
-        top: 50px;
-        width: 150px;
-      }
-      .nav-container h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        margin-left: -5px;
-      }
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      nav ul li {
-        margin-bottom: 10px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: #000;
-      }
-      /* Banner image styling, had to make the banner an oval to still show the navigation menu and keep consistency through my site */
-
-      .banner-img {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        z-index: 0;
-        border-radius: 50%;
-      }
-      /* Heading and text styling */
-      h1 {
-        text-align: center;
-        font-size: 24px;
-        margin-top: 20px;
-      }
-      h2 {
-        text-align: center;
-        font-size: 20px;
-      }
-      p {
-        font-size: 16px;
-        text-align: center;
-        margin: 20px auto;
-        width: 60%;
-        line-height: 1.6;
-      }
-      img {
-        display: block;
-        margin: 20px auto;
-      }
-      audio {
-        display: block;
-        margin: 10px auto;
-      }
-      iframe {
-        display: block;
-        margin: 20px auto;
-      }
-      hr {
-        width: 80%;
-        margin: 40px auto;
-      }
-      footer {
-        text-align: center;
-        margin-top: 40px;
-        padding: 20px 0;
-        border-top: 1px solid #ccc;
-      }
-      footer p {
-        margin: 5px;
-      }
-      footer a {
-        text-decoration: none;
-        color: #000;
-      }
-    </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <div class="nav-container">
-      <h2>Navigation Bar</h2>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="my_resume.html">Resume</a></li>
-          <li><a href="my_fun_facts.html">Fun Facts</a></li>
-        </ul>
-      </nav>
+    <!-- Left section with navigation and content -->
+    <div class="left-section">
+      <!-- Navigation Bar -->
+      <div class="nav-container">
+        <h2>Navigation Bar</h2>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="my_resume.html">Resume</a></li>
+            <li><a href="my_fun_facts.html">Fun Facts</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Content with scrolling -->
+      <div class="content-container">
+        <h1>Some Fun Facts About Me</h1>
+
+        <!-- Favorite Book Section -->
+        <h2>My Favorite Book</h2>
+        <img src="../assets/img/Song of Ice and fire cover.jpg" alt="Book Cover" width="200" height="300" />
+        <p>
+          <strong>Title:</strong> The World of Ice and Fire<br />
+          <strong>Author:</strong> George RR Martin<br />
+          <strong>Description:</strong> Book based off one of my favorite tv series of all time Game of Thrones.<br />
+          <strong>Purchase Link:</strong>
+          <a href="https://www.amazon.com/Song-Ice-Fire-Volumes/dp/0007477155">Buy on Amazon</a>
+        </p>
+        <hr />
+
+        <!-- Favorite Audio Track Section -->
+        <h2>My Favorite Song</h2>
+        <p>
+          <strong>Title:</strong> Moonlight's Mirage<br />
+          <strong>Artist:</strong> Bryce Lucas<br />
+          <strong>Description:</strong> Got into making AI music earlier this year... this is one of the better songs I have made. I like too many songs to have a favorite.<br />
+          <strong>Listen Here:</strong>
+          <a href="https://suno.com/song/7a98dae2-09b9-4a30-883e-de08056f753f">Listen on Suno</a>
+        </p>
+        <audio controls>
+          <source src="../assets/img/audio/Moonlight's Mirage.mp3" type="audio/mpeg" />
+          <p>
+            Your browser may not support this audio format. Please try a different browser, update your current one, or click on the link to
+            <a href="https://suno.com/song/7a98dae2-09b9-4a30-883e-de08056f753f">Suno</a>.
+          </p>
+        </audio>
+        <hr />
+
+        <!-- Favorite Movie/TV Series Section -->
+        <h2>My Favorite Movie/TV Series</h2>
+        <p>
+          <strong>Title:</strong> House of the Dragon<br />
+          <strong>Description:</strong> One of my favorite TV shows in the recent years. I was a fan of the first series and started to like the prequel series even more.<br />
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DotnJ7tTA34?si=CUpWlBObkqULNnEL" title="House of the Dragon Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr />
+      </div>
     </div>
 
-    <!-- Banner Image (oval format) -->
-    <img
-      class="banner-img"
-      src="../assets/img/mysetup.jpg"
-      alt="mysetup banner"
-    />
-
-    <!-- Heading -->
-    <h1>Some Fun Facts About Me</h1>
-
-    <!-- Favorite Book Section -->
-    <h2>My Favorite Book</h2>
-    <img
-      src="../assets/img/Song of Ice and fire cover.jpg"
-      alt="Book Cover"
-      width="200"
-      height="300"
-    />
-    <p>
-      <strong>Title:</strong> The World of Ice and Fire<br />
-      <strong>Author:</strong> George RR Martin<br />
-      <strong>Description:</strong> Book based off one of my favorite tv series
-      of all time Game of Thrones.<br />
-      <strong>Purchase Link:</strong>
-      <a href="https://www.amazon.com/Song-Ice-Fire-Volumes/dp/0007477155"
-        >Buy on Amazon</a
-      >
-    </p>
-    <!-- Horizontal Rule -->
-    <hr />
-
-    <!-- Favorite Audio Track Section -->
-    <h2>My Favorite Song</h2>
-    <p>
-      <strong>Title:</strong> Moonlight's Mirage<br />
-      <strong>Artist:</strong> Bryce Lucas<br />
-      <strong>Description:</strong> Got into making AI music earlier this
-      year... this is one of the better songs I have made. I like too many songs
-      to have a favorite.<br />
-      <strong>Listen Here:</strong>
-      <a href="https://suno.com/song/7a98dae2-09b9-4a30-883e-de08056f753f"
-        >Listen on Suno</a
-      >
-    </p>
-    <!-- Audio Sample -->
-    <audio controls>
-      <source
-        src="../assets/img/audio/Moonlight's Mirage.mp3"
-        type="audio/mpeg"
-      />
-      <!-- Error Handling Text under the Audio Player -->
-      <p>
-        Your browser may not support this audio format. Please try a different
-        browser, update your current one, or click on the link to
-        <a href="https://suno.com/song/7a98dae2-09b9-4a30-883e-de08056f753f"
-          >Suno</a
-        >.
-      </p>
-    </audio>
-    <!-- Horizontal Rule -->
-    <hr />
-
-    <!-- Favorite Movie/TV Series Section -->
-    <h2>My Favorite Movie/TV Series</h2>
-    <p>
-      <strong>Title:</strong> House of the Dragon<br />
-      <strong>Description:</strong> One of my favorite TV showsgit  in the recent
-      years. I was a fan of the first series and started to like the prequel
-      series even more.<br />
-    </p>
-    <!-- Embedded YouTube Trailer -->
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/DotnJ7tTA34?si=CUpWlBObkqULNnEL"
-      title="House of the Dragon Trailer"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-
-    <!-- Horizontal Rule -->
-    <hr />
+    <!-- Right section with background image -->
+    <div class="right-section"></div>
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2024 Bryce Lucas</p>
-      <p>
-        Email:
-        <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a>
-      </p>
-      <p>
-        Connect with me on:
-        <a href="https://www.linkedin.com/in/bryce-lucas-551767218">LinkedIn</a>
-      </p>
+      <p>Email: <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
+      <p>Connect with me on: <a href="https://www.linkedin.com/in/bryce-lucas-551767218">LinkedIn</a></p>
     </footer>
   </body>
 </html>
+
