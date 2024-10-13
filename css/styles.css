@@ -79,6 +79,17 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Degree progress styling */
+.degree-progress {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.degree-progress progress {
+    width: 80%; /* Adjust width as necessary */
+    margin: 10px auto;
+}
+
 /* Right section with background image */
 .right-section {
     background-color: #89cff0; /* Light blue background for the right section */
@@ -94,14 +105,4 @@ footer {
     padding: 10px;
     border-top: 1px solid #ccc;
     margin-top: 20px;
-}
-/* Degree progress styling */
-.degree-progress {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.degree-progress progress {
-    width: 80%; /* Adjust width as necessary */
-    margin: 10px auto;
 }
