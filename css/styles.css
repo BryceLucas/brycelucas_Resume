@@ -1,105 +1,97 @@
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divides the page into two columns */
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divides the page into two columns */
+  height: 100vh;
 }
 
 /* Left section styling */
 .left-section {
-    padding: 20px;
-    background-color: #f0f0f0; /* Light grey background for the left section */
+  padding: 20px;
+  background-color: #f0f0f0; /* Light grey background for the left section */
 }
 
-/* Sticky Navigation bar */
+/* Navigation bar styling */
 nav {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    position: fixed; /* Make the navbar sticky */
-    top: 20px;
-    left: 20px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 10; /* Ensure it stays above other elements */
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 nav ul li a {
-    padding: 10px;
-    background-color: #89cff0; /* Light blue background for navbar */
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
+  padding: 10px;
+  background-color: #89cff0; /* Light blue background for navbar */
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #4682b4; /* Darker blue when hovered */
-    transition: background-color 0.3s ease;
+  background-color: #4682b4; /* Darker blue when hovered */
+  transition: background-color 0.3s ease;
 }
 
 /* Introductory section styling */
 .intro {
-    margin-top: 100px;
+  margin-top: 50px;
 }
 
 .intro img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .intro h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .intro p {
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .intro .quote {
-    font-style: italic;
-    margin-bottom: 10px;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .button {
-    padding: 10px 20px;
-    background-color: #4682b4;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 /* Right section with background image */
 .right-section {
-    background-color: #89cff0; /* Light blue background for the right section */
-    background-image: url('../assets/img/OU campus.jpg'); /* Adjusted path */
-    background-size: cover;
-    background-position: center;
+  background-color: #89cff0; /* Light blue background for the right section */
+  background-image: url("../assets/img/OU campus.jpg"); /* Adjusted path */
+  background-size: cover;
+  background-position: center;
 }
 
 /* Footer section */
 footer {
-    grid-column: span 2;
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #ccc;
-    margin-top: 20px;
+  grid-column: span 2;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
 }
-
