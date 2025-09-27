@@ -2,146 +2,230 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Bryce Lucas - Resume</title>
-    <link rel="icon" type="image/jpg" href="../assets/img/OU campus.jpg" />
+    <title>Bryce Lucas — Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Resume of Bryce Lucas — IT & Software Support specializing in Node/Express, troubleshooting, imaging, and automation."
+    />
+    <link rel="icon" type="image/png" href="../assets/img/OU campus.jpg" />
     <link rel="stylesheet" href="../css/resume.css" />
   </head>
-  <body>
-    <!-- Navigation Bar -->
-    <div class="nav-container">
-      <h2>Navigation Bar</h2>
-      <nav>
-        <ul>
+  <body class="theme-ou">
+
+    <!-- Top Nav (kept simple; colors now follow the OU gold theme) -->
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="../index.html" aria-label="Home">BL</a>
+        <ul class="nav-list">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="my_resume.html">Resume</a></li>
+          <li><a href="my_resume.html" aria-current="page">Resume</a></li>
           <li><a href="my_fun_facts.html">Fun Facts</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
 
-    <!-- Heading -->
-    <h1>Bryce Lucas - Resume</h1>
+    <main class="container">
 
-    <!-- Image -->
-    <img
-      src="../assets/img/PFP.jpg"
-      alt="Bryce Lucas"
-      width="200"
-      height="200"
-    />
+      <!-- Resume Header Card -->
+      <section class="resume-header card">
+        <div class="avatar">
+          <img src="../assets/img/PFP.jpg" alt="Portrait of Bryce Lucas" width="160" height="160" />
+        </div>
+        <div class="headline">
+          <h1 class="title">Bryce Lucas</h1>
+          <p class="subtitle">IT & Software Support • Node/Express • Troubleshooting & Automation</p>
+          <ul class="contact">
+            <li><a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></li>
+            <li><a href="tel:+15868943827">(586) 894-3827</a></li>
+            <li>Macomb, MI</li>
+            <li><a href="https://github.com/BryceLucas" target="_blank" rel="noopener">github.com/BryceLucas</a></li>
+            <li><a href="https://www.linkedin.com/in/bryce-lucas-551767218" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Subheading: Contact Information -->
-    <h2>Contact Information</h2>
-    <p>
-      Bryce E. Lucas<br />
-      Macomb, MI 48042<br />
-      <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a
-      ><br />
-      Phone: (586) 894-3827
-    </p>
+      <!-- Summary -->
+      <section class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p>
+          Resourceful IT & Software Support specialist with hands-on experience imaging and deploying Windows
+          workstations at scale, troubleshooting under pressure, and documenting clean, repeatable fixes. Comfortable
+          across Windows/Linux, Active Directory, virtualization (VirtualBox), and web tooling (Node/Express). Known
+          for turning vague error reports into concrete, tested resolutions and training others to do the same.
+        </p>
+      </section>
 
-    <!-- Horizontal Line after Contact Information -->
-    <hr />
+      <!-- Core Competencies -->
+      <section class="section">
+        <h2 class="section-title">Core Competencies</h2>
+        <ul class="pill-row">
+          <li>Imaging & Deployment</li>
+          <li>Help Desk & Ticketing</li>
+          <li>Active Directory</li>
+          <li>Node/Express (APIs, file parsing)</li>
+          <li>Windows & Linux</li>
+          <li>Networking Basics</li>
+          <li>VirtualBox & Remote Support</li>
+          <li>Documentation & Training</li>
+          <li>Hardware Repair</li>
+          <li>Process Improvement</li>
+        </ul>
+      </section>
 
-    <!-- Objective -->
-    <h2>Objective</h2>
-    <p>
-      Seeking a spring/summer internship for 2025 going into my final semester
-      at Oakland University. I would like to bolster my experience at the
-      corporate level once more before graduating.
-    </p>
+      <!-- Technical Skills -->
+      <section class="section two-col">
+        <div>
+          <h2 class="section-title">Technical Skills</h2>
+          <ul class="kv">
+            <li><span>Operating Systems</span><span>Windows 10/11, Windows Server (basics), Linux (Ubuntu)</span></li>
+            <li><span>Admin / Directory</span><span>Active Directory (users, groups, roles), RDP, Group Policy (exposure)</span></li>
+            <li><span>Deployment</span><span>Imaging via boot media/NAS; SCCM exposure; Intune/Azure for devices</span></li>
+            <li><span>Networking</span><span>IPv4 basics, DHCP/DNS concepts, VLAN exposure, print servers</span></li>
+            <li><span>Web/Dev</span><span>Node.js, Express, HTML/CSS/JS</span></li>
+            <li><span>Tools</span><span>Git/GitHub, VirtualBox, Remote Desktop, ticketing systems, MSI Afterburner/GPU-Z (personal)</span></li>
+            <li><span>Hardware</span><span>Laptops/desktops (RAM, keyboards, trackpads, displays)</span></li>
+            <li><span>Security</span><span>Phishing awareness, data protection & disposal practices</span></li>
+          </ul>
+        </div>
+        <aside class="note">
+          <h3 class="note-title">Focus Areas</h3>
+          <p>Troubleshooting workflows, consistent imaging, and friction-free onboarding of users and devices.</p>
+        </aside>
+      </section>
 
-    <!-- Professional Experience -->
-    <h2>Professional Experience</h2>
+      <!-- Experience -->
+      <section class="section">
+        <h2 class="section-title">Experience</h2>
 
-    <!-- Experience 1 -->
-    <h3>
-      Aug. 2023 – Present, Information Technology Intern, Oakland University,
-      Auburn Hills, MI
-    </h3>
-    <p>
-      Imaged hundreds of computers and followed cybersecurity practices. Used
-      NAS servers for computer imaging, providing general help desk support.
-      Managed computer inventory and deployment of new machines. Administered
-      Active Directory for local computers and performed remote desktop
-      operations. Computer management and inventory throughout the library.
-    </p>
+        <article class="item">
+          <header>
+            <h3>Information Technology Intern</h3>
+            <div class="meta">
+              <span>Oakland University — Auburn Hills, MI</span>
+              <span>Aug 2023 – Present</span>
+            </div>
+          </header>
+          <ul class="bullets">
+            <li>Imaged and deployed large batches of Windows machines using standardized boot media and NAS-hosted images; reduced typical setup time through checklists and verified post-deploy steps.</li>
+            <li>Provided front-line help desk support; triaged issues across hardware, OS, and account access; documented fixes to improve first-contact resolution.</li>
+            <li>Managed computer inventory and coordinated deployment of replacement devices across the library and labs.</li>
+            <li>Performed Active Directory updates for local machines and assisted with remote desktop operations for staff and student workers.</li>
+          </ul>
+        </article>
 
-    <!-- Experience 2 -->
-    <h3>
-      Sept. 2021 – May 2023, Information Technology Intern, Plastic Omnium,
-      Troy, MI
-    </h3>
-    <p>
-      Imaged and reimaged hundreds of laptops and workstations. Completed over
-      1300+ tickets supporting 400+ users throughout North America. Managed
-      phones for over 350 users using Microsoft Azure and Intune. Heavy usage of
-      active directory and handling user permission and roles. Handled Verizon
-      business account support and print server management. Led an e-waste
-      project disposing of over 2 tons of electronic equipment. Supported
-      off-site users with RDP and SCCM resolving technical issues. Performed
-      hardware repairs on laptops and desktops with screens, keyboards,
-      trackpads, RAM, etc. Handled most outgoing and incoming shipments for
-      computer parts, supplies, and repairs. Followed strict security practices
-      regarding phishing, data protection, data storing, and data removal.
-    </p>
+        <article class="item">
+          <header>
+            <h3>Information Technology Intern</h3>
+            <div class="meta">
+              <span>Plastic Omnium — Troy, MI</span>
+              <span>Sept 2021 – May 2023</span>
+            </div>
+          </header>
+          <ul class="bullets">
+            <li>Imaged/reimaged hundreds of laptops and desktops; maintained a consistent workflow using company boot media and network-delivered images.</li>
+            <li>Resolved <strong>1300+ tickets</strong> supporting <strong>400+ users</strong> across North America; prioritized issues and communicated clearly with non-technical users.</li>
+            <li>Managed mobile devices for <strong>350+ users</strong> with Microsoft Azure/Intune; handled enrollments, profiles, and lifecycle changes.</li>
+            <li>Heavy Active Directory usage handling user roles/permissions; supported print server administration and queue issues.</li>
+            <li>Led an e-waste initiative disposing of <strong>2+ tons</strong> of electronics; documented chain of custody and compliant data destruction.</li>
+            <li>Supported off-site users with RDP and SCCM; executed remote diagnostics to resolve workstation performance and access problems.</li>
+            <li>Performed hardware repairs (screens, keyboards, trackpads, RAM); processed shipping/receiving for repairs and spare parts.</li>
+            <li>Followed strict security practices around phishing, data handling, and device retirement.</li>
+          </ul>
+        </article>
 
-    <!-- Experience 3 -->
-    <h3>
-      Sept. 2020 – May 2022, Click-List Associate, Kroger, Shelby Township, MI
-    </h3>
-    <p>
-      Shopped for Kroger customers and provided delivery to their cars. Awarded
-      recognition for high performance and customer praise.
-    </p>
+        <article class="item">
+          <header>
+            <h3>Customer Operations (Click-List Associate → Courtesy Clerk)</h3>
+            <div class="meta">
+              <span>Kroger — Shelby Township, MI</span>
+              <span>May 2017 – Sept 2020</span>
+            </div>
+          </header>
+          <ul class="bullets">
+            <li>Recognized for reliability and customer service; handled high-volume order prep and curbside delivery.</li>
+            <li>Supported store operations and recycling/bottle return logistics.</li>
+          </ul>
+        </article>
+      </section>
 
-    <!-- Experience 4 -->
-    <h3>May 2017 – Sept. 2020, Courtesy Clerk, Kroger, Shelby Township, MI</h3>
-    <p>
-      Bagged groceries and handled bottle returns and recycling. Awarded company
-      recognition for work ethic and output.
-    </p>
+      <!-- Projects -->
+      <section class="section">
+        <h2 class="section-title">Selected Projects</h2>
 
-    <!-- Educational Experience -->
-    <h2>Educational Experience</h2>
-    <table border="1">
-      <tr>
-        <th>Start–End</th>
-        <th>Degree</th>
-      </tr>
-      <tr>
-        <td>2021 – 2025 (expected)</td>
-        <td>B.S. in Information Technology, Oakland University, MI</td>
-      </tr>
-    </table>
+        <article class="item compact">
+          <header>
+            <h3>DeepScan — Resume Rewriter & Job Matching</h3>
+            <div class="meta"><span>Node/Express • HTML/CSS/JS • GitHub Pages</span></div>
+          </header>
+          <ul class="bullets">
+            <li>Built a Node/Express backend for file uploads and parsing (PDF/DOCX) with robust error handling and clear logs.</li>
+            <li>Diagnosed deployment issues on Hostinger/CyberPanel; standardized environment configuration and logging to stabilize uploads.</li>
+            <li>Collaborated with a team on feature scope, documentation, and presentation deliverables.</li>
+            <li><a href="https://github.com/BryceLucas/DeepScan" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </article>
 
-    <!-- Extracurricular Interests and Hobbies -->
-    <h2>Extracurricular Interests and Hobbies</h2>
-    <p>
-      I enjoy tinkering with my own computer and delving into the hardware side
-      of things. Whether it be tuning components or exchanging them for
-      different ones. I'm also a big sports and esports fan as I enjoy watching
-      the NBA, NFL, CDL, and professional Valorant. I have a passion for
-      computers and technology and in general am always curious to learn about
-      new advancements in the field, alongside future thinking of where the tech
-      industry will go with AI and quantum computing.
-    </p>
+        <article class="item compact">
+          <header>
+            <h3>Used Car Sales Interface</h3>
+            <div class="meta"><span>HTML/CSS/JS</span></div>
+          </header>
+          <ul class="bullets">
+            <li>Responsive inventory grid with filters (year, make, mileage, price, color); emphasizes clear UI and maintainable code.</li>
+            <li><a href="https://github.com/BryceLucas/brycelucas_hw5TH_csi3150_f2024" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </article>
 
-    <!-- Horizontal Rule -->
-    <hr />
+        <article class="item compact">
+          <header>
+            <h3>Library Management System (C++)</h3>
+            <div class="meta"><span>C++ • Data Structures</span></div>
+          </header>
+          <ul class="bullets">
+            <li>CLI-based management of books and patrons; applied arrays/lists/queues with clear documentation.</li>
+            <li><a href="https://github.com/BryceLucas/Librarymanagement" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </article>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Bryce Lucas</p>
-      <p>
-        Email:
-        <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a>
-      </p>
-      <p>
-        Connect with me on:
-        <a href="https://www.linkedin.com/in/bryce-lucas-551767218">LinkedIn</a>
-      </p>
-    </footer>
+      <!-- Education -->
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <article class="item">
+          <header>
+            <h3>B.S., Information Technology</h3>
+            <div class="meta">
+              <span>Oakland University — Rochester, MI</span>
+              <span>2021 – 2025 (expected)</span>
+            </div>
+          </header>
+          <p class="muted">Relevant coursework: Systems Administration, Networking, Data Structures, Database Design, HCI, Security Fundamentals.</p>
+        </article>
+      </section>
+
+      <!-- Awards / Activities (optional but professional) -->
+      <section class="section">
+        <h2 class="section-title">Awards & Activities</h2>
+        <ul class="bullets">
+          <li>Performance recognitions at Kroger for reliability and customer praise.</li>
+          <li>Team contributor on multiple university software projects; frequent lead on documentation and troubleshooting.</li>
+        </ul>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Bryce Lucas • Macomb, MI • <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
+      </footer>
+
+    </main>
+
+    <script>
+      // Year in footer for freshness
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
+
 
