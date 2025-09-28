@@ -9,11 +9,11 @@
       content="Fun facts about Bryce Lucas — favorite book, song, and TV series."
     />
     <link rel="icon" type="image/png" href="../assets/img/OU campus.jpg" />
-    <!-- Use the same OU theme as the resume -->
+    <!-- Pull the same OU styles so this page feels at home with the others -->
     <link rel="stylesheet" href="../css/resume.css" />
   </head>
   <body>
-    <!-- Top Navigation (same as resume) -->
+    <!-- Same top nav so the site feels consistent -->
     <header class="site-header">
       <nav class="nav">
         <a class="brand" href="../index.html" aria-label="Home">BL</a>
@@ -26,13 +26,14 @@
     </header>
 
     <main class="container">
+      <!-- Fun, light section — just a few personal picks -->
       <section class="section">
         <h1 class="section-title page-title">Some Fun Facts About Me</h1>
 
         <div class="facts-grid">
-          <!-- LEFT: cards with content -->
+          <!-- Main column of cards -->
           <div class="facts-left">
-            <!-- Favorite Book -->
+            <!-- Book card -->
             <article class="fact-card">
               <h2 class="fact-title">My Favorite Book</h2>
               <div class="book-row">
@@ -59,7 +60,7 @@
               </div>
             </article>
 
-            <!-- Favorite Song (YouTube + Spotify embeds) -->
+            <!-- Song card (YouTube + Spotify so people can pick how they listen) -->
             <article class="fact-card">
               <h2 class="fact-title">My Favorite Song</h2>
               <p class="fact-meta">
@@ -68,7 +69,7 @@
               </p>
               <p>I like this song because [placeholder text — I will fill in later].</p>
 
-              <!-- YouTube -->
+              <!-- YouTube embed -->
               <div class="video-wrap" aria-label="Musiq Soulchild - Love (Official Video)">
                 <iframe
                   src="https://www.youtube.com/embed/OIKC2ggCed4"
@@ -79,10 +80,10 @@
                 ></iframe>
               </div>
 
-              <!-- Spacer -->
+              <!-- Small gap between embeds -->
               <div style="height: .75rem;"></div>
 
-              <!-- Spotify -->
+              <!-- Spotify embed (kept inside a subtle border so it matches the card) -->
               <div aria-label="Listen on Spotify" style="border:1px solid var(--border); border-radius:.9rem; overflow:hidden;">
                 <iframe
                   data-testid="embed-iframe"
@@ -96,7 +97,7 @@
               </div>
             </article>
 
-            <!-- Favorite TV/Movie -->
+            <!-- TV/Movie card -->
             <article class="fact-card">
               <h2 class="fact-title">My Favorite Movie/TV Series</h2>
               <p class="fact-meta">
@@ -120,7 +121,7 @@
         </div>
       </section>
 
-      <!-- My PC Setup (image + specs) -->
+      <!-- PC setup section — image + quick spec pills -->
       <section class="section">
         <h2 class="section-title">My PC Setup</h2>
 
@@ -140,15 +141,15 @@
       </section>
     </main>
 
+    <!-- Shared footer -->
     <footer class="site-footer">
       <p>© <span id="year"></span> Bryce Lucas • <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
     </footer>
 
     <script>
+      // Tiny helper so the footer year is always current
       const y = document.getElementById('year');
       if (y) y.textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
-
-

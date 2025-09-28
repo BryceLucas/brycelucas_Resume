@@ -9,11 +9,11 @@
       content="Resume of Bryce Lucas — IT & Software Support specializing in imaging, Active Directory, remote desktop support, ticketing, and troubleshooting."
     />
     <link rel="icon" type="image/png" href="../assets/img/OU campus.jpg" />
-    <!-- OU gold/black theme + polished layout -->
+    <!-- Shared OU theme so this page matches the rest of the site -->
     <link rel="stylesheet" href="../css/resume.css" />
   </head>
   <body class="theme-ou">
-    <!-- Top Navigation -->
+    <!-- Simple, persistent nav so recruiters can jump around quickly -->
     <header class="site-header">
       <nav class="nav">
         <a class="brand" href="../index.html" aria-label="Home">BL</a>
@@ -26,7 +26,7 @@
     </header>
 
     <main class="container">
-      <!-- Resume Header Card -->
+      <!-- Resume header: avatar, name, quick ways to contact me -->
       <section class="resume-header card">
         <div class="avatar">
           <img
@@ -61,7 +61,7 @@
               >
             </li>
           </ul>
-          <!-- OU gold CTAs -->
+          <!-- Handy CTAs (PDF + email) -->
           <div class="actions">
             <a class="btn primary" href="../assets/Bryce_Lucas_Resume.pdf"
               >Download Resume (PDF)</a
@@ -71,7 +71,7 @@
         </div>
       </section>
 
-      <!-- Summary -->
+      <!-- Quick story of what I’m good at and where I shine -->
       <section class="section">
         <h2 class="section-title">Professional Summary</h2>
         <p>
@@ -84,7 +84,7 @@
         </p>
       </section>
 
-      <!-- Core Competencies -->
+      <!-- My go-to strengths (kept scannable for recruiters) -->
       <section class="section">
         <h2 class="section-title">Core Competencies</h2>
         <ul class="pill-row">
@@ -94,14 +94,14 @@
           <li>Remote Desktop Support</li>
           <li>Windows &amp; Linux</li>
           <li>Networking Basics</li>
-          <li>Node/Express (APIs, file parsing)</li>
+          <li>VirtualBox</li>
           <li>Documentation &amp; Training</li>
           <li>Hardware Repair</li>
           <li>Process Improvement</li>
         </ul>
       </section>
 
-      <!-- Technical Skills -->
+      <!-- Skills, but organized so they’re easy to skim -->
       <section class="section two-col">
         <div>
           <h2 class="section-title">Technical Skills</h2>
@@ -148,7 +148,7 @@
         </aside>
       </section>
 
-      <!-- Experience -->
+      <!-- Real experience, numbers included -->
       <section class="section">
         <h2 class="section-title">Experience</h2>
 
@@ -227,10 +227,10 @@
 
         <article class="item">
           <header>
-            <h3>Customer Operations (Courtesy Clerk → Click-List Associate)</h3>
+            <h3>Customer Operations (Click-List Associate → Courtesy Clerk)</h3>
             <div class="meta">
               <span>Kroger — Shelby Township, MI</span>
-              <span>May 2017 – Sept 2022</span>
+              <span>May 2017 – Sept 2020</span>
             </div>
           </header>
           <ul class="bullets">
@@ -243,7 +243,7 @@
         </article>
       </section>
 
-      <!-- Selected Projects -->
+      <!-- Project highlights with links so people can dig in -->
       <section class="section">
         <h2 class="section-title">Selected Projects</h2>
 
@@ -303,7 +303,7 @@
           <ul class="bullets">
             <li>
               CLI-based management of books and patrons; applied arrays/lists/queues with clear
-              documentation. With extensive use of SQL commands using MySQL.
+              documentation.
             </li>
             <li>
               <a
@@ -317,7 +317,7 @@
         </article>
       </section>
 
-      <!-- Education -->
+      <!-- School details -->
       <section class="section">
         <h2 class="section-title">Education</h2>
         <article class="item">
@@ -335,7 +335,7 @@
         </article>
       </section>
 
-      <!-- Awards / Activities -->
+      <!-- A few extras that round me out -->
       <section class="section">
         <h2 class="section-title">Awards &amp; Activities</h2>
         <ul class="bullets">
@@ -347,7 +347,7 @@
         </ul>
       </section>
 
-      <!-- Footer -->
+      <!-- Footer matches other pages -->
       <footer class="site-footer">
         <p>
           © <span id="year"></span> Bryce Lucas • Macomb, MI •
@@ -357,7 +357,7 @@
     </main>
 
     <script>
-      // Year in footer for freshness
+      // Auto-update the year so the footer never looks stale
       const y = document.getElementById('year');
       if (y) y.textContent = new Date().getFullYear();
     </script>

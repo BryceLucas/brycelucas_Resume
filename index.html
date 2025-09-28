@@ -9,23 +9,23 @@
       content="Bryce Lucas — IT & Software Support portfolio. Oakland University student with 4+ years of IT experience."
     />
     <link rel="icon" type="image/jpg" href="assets/img/OU campus.jpg" />
-    <!-- Reuse the OU gold theme -->
+    <!-- One shared stylesheet for the whole site so everything keeps the same OU look -->
     <link rel="stylesheet" href="css/resume.css" />
     <style>
-      /* Small page-specific tweaks */
+      /* Home-page-only tweaks (kept tiny on purpose) */
       .hero { margin-top: .8rem; }
       .tagline { color: var(--muted); margin: .15rem 0 .6rem; }
       .intro-text { margin: .5rem 0 0; color: var(--text); }
       .stats { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; margin-top: 1rem; }
       .progress-card .metric { display:flex; align-items:center; justify-content:space-between; margin-bottom: .5rem; }
       .progress-outer { height: 12px; background: #1a1a1a; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
-      .progress-inner { height: 100%; width: 96%; background: linear-gradient(180deg, var(--gold), var(--gold-2)); }
+      .progress-inner { height: 100%; width: 100%; background: linear-gradient(180deg, var(--gold), var(--gold-2)); }
       .quote { margin:.4rem 0 .8rem; color: #e7d9a5; font-style: italic; }
       @media (max-width: 900px){ .stats{grid-template-columns:1fr} }
     </style>
   </head>
   <body>
-    <!-- Top Navigation -->
+    <!-- Sticky top nav so visitors can hop between pages easily -->
     <header class="site-header">
       <nav class="nav">
         <a class="brand" href="index.html" aria-label="Home">BL</a>
@@ -38,7 +38,7 @@
     </header>
 
     <main class="container">
-      <!-- Hero / Intro -->
+      <!-- Friendly intro card: photo + quick “who I am” + CTA buttons -->
       <section class="resume-header card hero">
         <div class="avatar">
           <img src="assets/img/PFP.jpg" alt="Portrait of Bryce Lucas" width="160" height="160" />
@@ -55,8 +55,8 @@
             Hello! I’m Bryce, a junior at Oakland University studying Information Technology. I’ve had a passion
             for technology since I was a teenager—built my first PC in 2016 and have upgraded many more since.
             My interests lean heavily into hardware and hands-on problem solving. I’ve been interning in IT for
-            <strong>over 4 years</strong>, gaining experience across corporate and educational environments, from
-            imaging and deployment to help desk, Active Directory, and remote support.
+            over 4 years, gaining experience across corporate and educational environments, from
+            imaging and deployment to help desk, active directory, and remote support.
           </p>
 
           <div class="actions">
@@ -66,36 +66,35 @@
         </div>
       </section>
 
-      <!-- Academics / Stats -->
+      <!-- School stats: simple and clear (GPA + credits bar) -->
       <section class="section">
         <h2 class="section-title">Academics</h2>
         <div class="stats">
-          <!-- GPA -->
+          <!-- GPA snapshot -->
           <article class="card">
-            <h3 style="margin:.2rem 0 .6rem;">Current GPA: <span class="accent">3.05</span></h3>
-            <p class="muted">Oakland University — B.S. Information Technology (in progress)</p>
+            <h3 style="margin:.2rem 0 .6rem;">Current GPA: <span class="accent">3.05</span> (December 2025)</h3>
+            <p class="muted">Oakland University — B.S. Information Technology</p>
           </article>
 
-          <!-- Credits Progress -->
+          <!-- Credits (showing that I’ve surpassed the requirement) -->
           <article class="card progress-card">
             <div class="metric">
-              <strong>Credits Completed Towards Degree</strong>
-              <span class="accent">153</span>
+              <span>Credits Completed Towards Degree</span>
+              <span class="accent">153 / 128</span>
             </div>
-            <!-- Visual progress bar (approximate; adjust if you want a different max) -->
+            <!-- Full bar because I’m over the finish line on credits -->
             <div class="progress-outer" aria-label="Credits progress">
-              <div class="progress-inner" style="width: 96%;"></div>
+              <div class="progress-inner"></div>
             </div>
-            <p class="muted" style="margin-top:.5rem;">If you’d like a precise percentage, tell me your degree’s required credits and I’ll set the bar exactly.</p>
           </article>
         </div>
       </section>
 
-      <!-- Campus Image -->
+      <!-- A wide campus image to give the page some visual breathing room -->
       <section class="section">
         <article class="card" style="overflow:hidden;">
           <img
-            src="assets/img/ou-campus-wide.jpg"
+            src="assets/img/OU campus.jpg"
             alt="Oakland University campus"
             style="width:100%; height:auto; display:block; border-radius:.8rem;"
           />
@@ -103,14 +102,15 @@
       </section>
     </main>
 
+    <!-- Footer stays identical on all pages for a consistent finish -->
     <footer class="site-footer">
       <p>© <span id="year"></span> Bryce Lucas • <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
     </footer>
 
     <script>
+      // Keep the year fresh without manual edits
       const y = document.getElementById('year');
       if (y) y.textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
-
