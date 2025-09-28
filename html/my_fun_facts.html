@@ -2,79 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Bryce Lucas - Fun Facts</title>
-    <link rel="stylesheet" href="../css/facts.css"> <!-- Link to facts.css -->
-    <link rel="icon" type="image/jpg" href="../assets/img/OU campus.jpg" />
+    <title>Bryce Lucas — Fun Facts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Fun facts about Bryce Lucas — favorite book, song, and TV series."
+    />
+    <link rel="icon" type="image/png" href="../assets/img/OU campus.jpg" />
+    <!-- Use the same OU theme as the resume -->
+    <link rel="stylesheet" href="../css/resume.css" />
   </head>
   <body>
-    <!-- Left section with navigation and content -->
-    <div class="left-section">
-      <!-- Navigation Bar -->
-      <div class="nav-container">
-        <h2>Navigation Bar</h2>
-        <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="my_resume.html">Resume</a></li>
-            <li><a href="my_fun_facts.html">Fun Facts</a></li>
-          </ul>
-        </nav>
-      </div>
+    <!-- Top Navigation (same as resume) -->
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="../index.html" aria-label="Home">BL</a>
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="my_resume.html">Resume</a></li>
+          <li><a href="my_fun_facts.html" aria-current="page">Fun Facts</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- Content with scrolling -->
-      <div class="content-container">
-        <h1>Some Fun Facts About Me</h1>
+    <main class="container">
+      <section class="section">
+        <h1 class="section-title page-title">
+          Some Fun Facts About Me
+          <span class="badge">Just for fun</span>
+        </h1>
 
-        <!-- Favorite Book Section -->
-        <h2>My Favorite Book</h2>
-        <img src="../assets/img/Song of Ice and fire cover.jpg" alt="Book Cover" width="200" height="300" />
-        <p>
-          <strong>Title:</strong> The World of Ice and Fire<br />
-          <strong>Author:</strong> George RR Martin<br />
-          <strong>Description:</strong> Book based off one of my favorite tv series of all time Game of Thrones.<br />
-          <strong>Purchase Link:</strong>
-          <a href="https://www.amazon.com/Song-Ice-Fire-Volumes/dp/0007477155">Buy on Amazon</a>
-        </p>
-        <hr />
+        <div class="facts-grid">
+          <!-- LEFT: cards with content -->
+          <div class="facts-left">
+            <!-- Favorite Book -->
+            <article class="fact-card">
+              <h2 class="fact-title">My Favorite Book</h2>
+              <div class="book-row">
+                <img
+                  src="../assets/img/Song of Ice and fire cover.jpg"
+                  alt="The World of Ice and Fire book cover"
+                  width="200" height="200"
+                />
+                <div>
+                  <p class="fact-meta">
+                    <strong>Title:</strong> The World of Ice and Fire<br />
+                    <strong>Author:</strong> George R. R. Martin
+                  </p>
+                  <p>
+                    Book based off one of my favorite TV series of all time, <em>Game of Thrones</em>.
+                  </p>
+                  <p>
+                    <a href="https://www.amazon.com/Song-Ice-Fire-Volumes/dp/0007477155" target="_blank" rel="noopener">
+                      Purchase on Amazon
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
 
-        <!-- Favorite Audio Track Section -->
-        <h2>My Favorite Song</h2>
-        <p>
-          <strong>Title:</strong> Moonlight's Mirage<br />
-          <strong>Artist:</strong> Bryce Lucas<br />
-          <strong>Description:</strong> Got into making AI music earlier this year... this is one of the better songs I have made. I like too many songs to have a favorite.<br />
-          <strong>Listen Here:</strong>
-          <a href="https://suno.com/song/7a98dae2-09b9-4a30-883e-de08056f753f">Listen on Suno</a>
-        </p>
-        <audio controls>
-          <source src="../assets/img/audio/Moonlight's Mirage.mp3" type="audio/mpeg" />
-          <p>
-            Your browser may not support this audio format. Please try a different browser, update your current one, or click on the link to
-            <a href="https://suno.com/song/7a98dae2-09b9-4a30-883e-de08056f753f">Suno</a>.
-          </p>
-        </audio>
-        <hr />
+            <!-- Favorite Song -->
+            <article class="fact-card">
+              <h2 class="fact-title">My Favorite Song</h2>
+              <p class="fact-meta">
+                <strong>Title:</strong> Moonlight's Mirage<br />
+                <strong>Artist:</strong> Bryce Lucas
+              </p>
+              <p>
+                Got into making AI music earlier this year… this is one of the better songs I’ve made.
+                I like too many songs to have a single favorite.
+              </p>
+              <p>
+                <a href="https://suno.com/song/7a98dae2-09b9-4a30-883e-de08056f753f" target="_blank" rel="noopener">
+                  Listen on Suno
+                </a>
+              </p>
+              <div class="audio-wrap">
+                <audio controls>
+                  <source src="../assets/img/audio/Moonlight's Mirage.mp3" type="audio/mpeg" />
+                  Your browser may not support MP3 playback. Try a different browser or listen on Suno.
+                </audio>
+              </div>
+            </article>
 
-        <!-- Favorite Movie/TV Series Section -->
-        <h2>My Favorite Movie/TV Series</h2>
-        <p>
-          <strong>Title:</strong> House of the Dragon<br />
-          <strong>Description:</strong> One of my favorite TV shows in the recent years. I was a fan of the first series and started to like the prequel series even more.<br />
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DotnJ7tTA34?si=CUpWlBObkqULNnEL" title="House of the Dragon Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <hr />
-      </div>
-    </div>
+            <!-- Favorite TV/Movie -->
+            <article class="fact-card">
+              <h2 class="fact-title">My Favorite Movie/TV Series</h2>
+              <p class="fact-meta">
+                <strong>Title:</strong> House of the Dragon
+              </p>
+              <p>
+                One of my favorite TV shows in recent years. I was a fan of the first series and started
+                to like the prequel series even more.
+              </p>
+              <div class="video-wrap" aria-label="House of the Dragon trailer">
+                <iframe
+                  src="https://www.youtube.com/embed/DotnJ7tTA34?si=CUpWlBObkqULNnEL"
+                  title="House of the Dragon Trailer"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </article>
+          </div>
 
-    <!-- Right section with background image -->
-    <div class="right-section"></div>
+          <!-- RIGHT: setup image panel -->
+          <aside class="facts-right" aria-label="Bryce's desk setup background"></aside>
+        </div>
+      </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Bryce Lucas</p>
-      <p>Email: <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
-      <p>Connect with me on: <a href="https://www.linkedin.com/in/bryce-lucas-551767218">LinkedIn</a></p>
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Bryce Lucas • <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
     </footer>
+
+    <script>
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
 
