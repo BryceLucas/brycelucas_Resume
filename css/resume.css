@@ -279,3 +279,21 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
   .book-row { grid-template-columns: 90px 1fr; }
   .book-row img { width: 90px; height: 90px; }
 }
+/* Center the fun facts cards */
+.facts-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers all the cards horizontally */
+}
+
+/* Keep cards from stretching too wide on large screens */
+.fact-card {
+  max-width: 700px;  /* adjust to taste */
+  width: 100%;
+}
+
+/* Center the section headers */
+.section-title.page-title,
+.section-title {
+  text-align: center;
+}
