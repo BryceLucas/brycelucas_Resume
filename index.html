@@ -2,78 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Bryce Lucas - Portfolio Website</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Link to styles.css -->
+    <title>Bryce Lucas — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bryce Lucas — IT & Software Support portfolio. Oakland University student with 4+ years of IT experience."
+    />
     <link rel="icon" type="image/jpg" href="assets/img/OU campus.jpg" />
+    <!-- Reuse the OU gold theme -->
+    <link rel="stylesheet" href="css/resume.css" />
+    <style>
+      /* Small page-specific tweaks */
+      .hero { margin-top: .8rem; }
+      .tagline { color: var(--muted); margin: .15rem 0 .6rem; }
+      .intro-text { margin: .5rem 0 0; color: var(--text); }
+      .stats { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; margin-top: 1rem; }
+      .progress-card .metric { display:flex; align-items:center; justify-content:space-between; margin-bottom: .5rem; }
+      .progress-outer { height: 12px; background: #1a1a1a; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+      .progress-inner { height: 100%; width: 96%; background: linear-gradient(180deg, var(--gold), var(--gold-2)); }
+      .quote { margin:.4rem 0 .8rem; color: #e7d9a5; font-style: italic; }
+      @media (max-width: 900px){ .stats{grid-template-columns:1fr} }
+    </style>
   </head>
   <body>
-    <!-- Left section with navigation and intro -->
-    <div class="left-section">
-      <!-- Navigation Bar -->
-      <div class="nav-container">
-        <h2>Navigation Bar</h2>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="html/my_resume.html">Resume</a></li>
-            <li><a href="html/my_fun_facts.html">Fun Facts</a></li>
-          </ul>
-        </nav>
-      </div>
+    <!-- Top Navigation -->
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Home">BL</a>
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="html/my_resume.html">Resume</a></li>
+          <li><a href="html/my_fun_facts.html">Fun Facts</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- Introductory content -->
-      <div class="intro">
-        <img src="assets/img/PFP.jpg" alt="Bryce Lucas's Profile Picture" />
-        <h1>Bryce Lucas Portfolio Website</h1>
-
-        <blockquote class="quote">
-          "What we spend our time on is probably the most important decision we
-          make." <br />
-          - Ray Kurzweil
-        </blockquote>
-
-        <p>
-          Hello! My name is Bryce Lucas, I am a junior at Oakland University
-          studying for my bachelor's in Information Technology. I've had a
-          passion for technology and computers since I was a teenager. I built
-          my first computer in 2016 and have built and upgraded many more since
-          then. My passion for computers mainly stems from the hardware side of
-          things. I have been interning in IT for over 3 years now gaining
-          invaluable experience in the field and obtaining a better
-          understanding of the day-to-day operations and struggles in the
-          corporate and educational realm of IT. I aspire to get an IT or
-          Cybersecurity position at a reputable university or in the car
-          industry locally here in Detroit.
-        </p>
-
-        <a class="button" href="html/my_resume.html">View My Resume</a>
-        <div class="degree-progress">
-          <p>Credits Completed Towards Degree: 112</p>
-          <progress value="112" max="128"></progress>
+    <main class="container">
+      <!-- Hero / Intro -->
+      <section class="resume-header card hero">
+        <div class="avatar">
+          <img src="assets/img/PFP.jpg" alt="Portrait of Bryce Lucas" width="160" height="160" />
         </div>
-      </div>
-    </div>
+        <div class="headline">
+          <h1 class="title">Bryce Lucas</h1>
+          <p class="tagline">IT &amp; Software Support • Troubleshooting &amp; Automation</p>
 
-    <!-- Right section for the background image -->
-    <div class="right-section">
-      <!-- Background image is handled in the CSS -->
-    </div>
+          <p class="quote">
+            “What we spend our time on is probably the most important decision we make.” — Ray Kurzweil
+          </p>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Bryce Lucas</p>
-      <p>
-        Email:
-        <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a>
-      </p>
-      <p>
-        Connect with me on:
-        <a href="https://www.linkedin.com/in/bryce-lucas-551767218/"
-          >LinkedIn</a
-        >
-      </p>
+          <p class="intro-text">
+            Hello! I’m Bryce, a junior at Oakland University studying Information Technology. I’ve had a passion
+            for technology since I was a teenager—built my first PC in 2016 and have upgraded many more since.
+            My interests lean heavily into hardware and hands-on problem solving. I’ve been interning in IT for
+            <strong>over 4 years</strong>, gaining experience across corporate and educational environments, from
+            imaging and deployment to help desk, Active Directory, and remote support.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="html/my_resume.html">View My Resume</a>
+            <a class="btn ghost" href="mailto:brycelucas2019@gmail.com">Email Me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Academics / Stats -->
+      <section class="section">
+        <h2 class="section-title">Academics</h2>
+        <div class="stats">
+          <!-- GPA -->
+          <article class="card">
+            <h3 style="margin:.2rem 0 .6rem;">Current GPA: <span class="accent">3.05</span></h3>
+            <p class="muted">Oakland University — B.S. Information Technology (in progress)</p>
+          </article>
+
+          <!-- Credits Progress -->
+          <article class="card progress-card">
+            <div class="metric">
+              <strong>Credits Completed Towards Degree</strong>
+              <span class="accent">153</span>
+            </div>
+            <!-- Visual progress bar (approximate; adjust if you want a different max) -->
+            <div class="progress-outer" aria-label="Credits progress">
+              <div class="progress-inner" style="width: 96%;"></div>
+            </div>
+            <p class="muted" style="margin-top:.5rem;">If you’d like a precise percentage, tell me your degree’s required credits and I’ll set the bar exactly.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Campus Image -->
+      <section class="section">
+        <article class="card" style="overflow:hidden;">
+          <img
+            src="assets/img/ou-campus-wide.jpg"
+            alt="Oakland University campus"
+            style="width:100%; height:auto; display:block; border-radius:.8rem;"
+          />
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Bryce Lucas • <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
     </footer>
+
+    <script>
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
 

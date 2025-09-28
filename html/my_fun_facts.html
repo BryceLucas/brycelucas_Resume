@@ -27,10 +27,7 @@
 
     <main class="container">
       <section class="section">
-        <h1 class="section-title page-title">
-          Some Fun Facts About Me
-          <span class="badge">Just for fun</span>
-        </h1>
+        <h1 class="section-title page-title">Some Fun Facts About Me</h1>
 
         <div class="facts-grid">
           <!-- LEFT: cards with content -->
@@ -55,11 +52,8 @@
                   <p>
                     <a
                       href="https://www.amazon.com/Song-Ice-Fire-Volumes/dp/0007477155"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      Purchase on Amazon
-                    </a>
+                      target="_blank" rel="noopener"
+                    >Purchase on Amazon</a>
                   </p>
                 </div>
               </div>
@@ -72,9 +66,7 @@
                 <strong>Title:</strong> Love<br />
                 <strong>Artist:</strong> Musiq Soulchild
               </p>
-              <p>
-                One of my favorite songs in my favorite genre of music R&B. Love is a timeless song by Musiq Soulchild.
-              </p>
+              <p>I like this song because [placeholder text — I will fill in later].</p>
 
               <!-- YouTube -->
               <div class="video-wrap" aria-label="Musiq Soulchild - Love (Official Video)">
@@ -90,16 +82,14 @@
               <!-- Spacer -->
               <div style="height: .75rem;"></div>
 
-              <!-- Spotify (kept inside the same card, styled to match) -->
-              <div aria-label="Listen on Spotify" style="border:1px solid var(--border); border-radius: .9rem; overflow: hidden;">
+              <!-- Spotify -->
+              <div aria-label="Listen on Spotify" style="border:1px solid var(--border); border-radius:.9rem; overflow:hidden;">
                 <iframe
                   data-testid="embed-iframe"
                   style="border-radius:12px"
                   src="https://open.spotify.com/embed/track/6uSa5iCMwPr10Ftpz8w09b?utm_source=generator"
-                  width="100%"
-                  height="352"
-                  frameborder="0"
-                  allowfullscreen=""
+                  width="100%" height="352" frameborder="0"
+                  allowfullscreen
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy"
                 ></iframe>
@@ -135,15 +125,12 @@
         <h2 class="section-title">My PC Setup</h2>
 
         <article class="fact-card">
-          <!-- Responsive high-res image: scales to container width -->
           <img
             src="../assets/img/mysetup.jpg"
             alt="Bryce's high-resolution desk and PC setup"
             style="width:100%;height:auto;display:block;border-radius:1rem;border:1px solid var(--border);"
           />
-
-          <!-- OU-styled pill tabs for specs -->
-          <ul class="pill-row" style="margin-top: .8rem;">
+          <ul class="pill-row" style="margin-top:.8rem;">
             <li>Ryzen 7 5700X3D</li>
             <li>Radeon 9070 XT</li>
             <li>32 GB RAM</li>
@@ -154,16 +141,14 @@
     </main>
 
     <footer class="site-footer">
-      <p>
-        © <span id="year"></span> Bryce Lucas •
-        <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a>
-      </p>
+      <p>© <span id="year"></span> Bryce Lucas • <a href="mailto:brycelucas2019@gmail.com">brycelucas2019@gmail.com</a></p>
     </footer>
 
     <script>
-      const y = document.getElementById("year");
+      const y = document.getElementById('year');
       if (y) y.textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
+
 
